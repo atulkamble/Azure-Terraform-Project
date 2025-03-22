@@ -1,6 +1,26 @@
 # Azure-Terraform-Project
 Azure Terraform Project
 
+# Azure 3-Tier Infrastructure using Terraform
+
+## 💡 Description
+
+This project provisions a simple 3-tier architecture in Azure using Terraform. It includes a virtual network, subnets, NSGs, and a web VM with NGINX.
+
+## ✅ Prerequisites
+
+- Azure CLI
+- Terraform CLI
+- Azure Subscription
+
+## 🚀 How to Use
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/your-repo/azure-terraform-3tier.git
+cd azure-terraform-3tier
+```
+
 Here’s a **complete Azure Terraform project** with **code and documentation**, ideal for deploying a basic 3-tier architecture (web, app, and database) using **Azure Virtual Network**, **Virtual Machines**, and **Network Security Groups**. This project can serve as a solid starting point for real-world scenarios.
 
 ---
