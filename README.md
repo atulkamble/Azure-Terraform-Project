@@ -1,5 +1,4 @@
-# Azure-Terraform-Project
-# Azure 3-Tier Infrastructure using Terraform
+# Project: Azure 3-Tier Infrastructure using Terraform
 
 ## 💡 Description
 
