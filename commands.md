@@ -41,6 +41,42 @@ sudo apt update
 sudo apt-get install terraform
 terraform --version
 
+Requirements: IAC Project - Azure 
+
+- Azure cli 
+-Terraform
+- Azure Account 
+Powershell - Terminal // az login 
+
+
+// Note down - modify susbcription id  >> main.tf 
+
+// git --version >> Version Control 
+
+git clone https://github.com/atulkamble/Azure-Terraform-Project.git
+cd Azure-Terraform-Project
+pwd
+ls
+tree
+
+choco install tree
+choco install python
+
+// vs code manually 
+code .
+
+Install extensions >> Azure Terraform, Hashicorp Terraform
+
+terraform init
+terraform validate 
+terraform fmt
+terraform plan 
+terraform apply 
+terraform destroy
+
+git branch --set-upstream-to=origin/staging
+
+
 
 
 Ref: https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt
