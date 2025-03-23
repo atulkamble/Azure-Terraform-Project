@@ -179,22 +179,28 @@ resource "azurerm_linux_virtual_machine" "web_vm" {
 ## 2️⃣ `variables.tf`
 ```hcl
 variable "resource_group_name" {
-  default = "terraform-rg"
+  description = "The name of the resource group"
+  type        = string
 }
 
 variable "location" {
-  default = "East US"
+  description = "The Azure region where resources will be deployed"
+  type        = string
+  default     = "East US"  # Change this if needed
 }
 
 variable "admin_username" {
-  description = "Admin username for VMs"
+  description = "Admin username for the VM"
+  type        = string
   default     = "azureuser"
 }
 
 variable "admin_password" {
-  description = "Admin password for VMs"
+  description = "Admin password for the VM"
+  type        = string
   sensitive   = true
 }
+
 ```
 
 ---
