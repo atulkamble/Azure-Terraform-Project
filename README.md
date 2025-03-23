@@ -207,7 +207,10 @@ variable "admin_password" {
 
 ## 3️⃣ `terraform.tfvars`
 ```hcl
-admin_password = "YourSecurePassword123!"
+resource_group_name = "my-resource-group"
+location           = "East US"
+admin_username     = "azureuser"
+admin_password     = "SecurePassw0rd!"
 ```
 
 ---
