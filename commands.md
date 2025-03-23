@@ -6,15 +6,16 @@
 6. // install git
 7. sudo apt install git -y
 8. git --version
+9. sudo apt install tree -y
    
-9. curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-10. sudo apt-get update
-11. sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release
-12. sudo mkdir -p /etc/apt/keyrings
-13. curl -sLS https://packages.microsoft.com/keys/microsoft.asc |   gpg --dearmor | sudo tee /etc/apt/keyrings/microsoft.gpg > /dev/null
-14. sudo chmod go+r /etc/apt/keyrings/microsoft.gpg
-15. AZ_DIST=$(lsb_release -cs)
-16. echo "Types: deb
+10. curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+11. sudo apt-get update
+12. sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release
+13. sudo mkdir -p /etc/apt/keyrings
+14. curl -sLS https://packages.microsoft.com/keys/microsoft.asc |   gpg --dearmor | sudo tee /etc/apt/keyrings/microsoft.gpg > /dev/null
+15. sudo chmod go+r /etc/apt/keyrings/microsoft.gpg
+16. AZ_DIST=$(lsb_release -cs)
+17. echo "Types: deb
 URIs: https://packages.microsoft.com/repos/azure-cli/
 Suites: ${AZ_DIST}
 Components: main
