@@ -84,13 +84,9 @@ resource "azurerm_linux_virtual_machine" "web_vm" {
   location                        = azurerm_resource_group.rg.location
   size                            = "Standard_B1s"
   admin_username                  = var.admin_username
+  admin_password                  = var.admin_password  # Using a password for authentication
   network_interface_ids           = [azurerm_network_interface.web_nic.id]
-  disable_password_authentication = true
-
-  admin_ssh_key {
-    username   = var.admin_username
-    public_key = file("~/.ssh/id_rsa.pub") # Replace with actual path if different
-  }
+  disable_password_authentication = false  # Enable password authentication
 
   os_disk {
     caching              = "ReadWrite"
@@ -112,10 +108,10 @@ resource "azurerm_linux_virtual_machine" "web_vm" {
     ]
 
     connection {
-      type        = "ssh"
-      user        = var.admin_username
-      private_key = file("~/.ssh/id_rsa") # Replace with actual path if different
-      host        = azurerm_public_ip.web_pip.ip_address
+      type     = "ssh"
+      user     = var.admin_username
+      password = var.admin_password
+      host     = azurerm_public_ip.web_pip.ip_address
     }
   }
 }
