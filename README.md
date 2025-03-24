@@ -1,4 +1,4 @@
-# Project: Azure 3-Tier Infrastructure using Terraform
+# Project: Azure Terraform Project
 
 ## 💡 Description
 
@@ -26,15 +26,17 @@ Here’s a **complete Azure Terraform project** with **code and documentation**,
 
 ### 📂 Folder Structure
 ```
-azure-terraform-3tier/
-│
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── terraform.tfvars
+├── LICENSE
 ├── README.md
-└── scripts/
-    └── install_nginx.sh
+├── commands.md
+├── main.tf
+├── outputs.tf
+├── scripts
+│   └── install_nginx.sh
+├── terraform.tfstate
+├── terraform.tfstate.backup
+├── terraform.tfvars
+└── variables.tf
 ```
 
 ---
