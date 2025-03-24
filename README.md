@@ -15,8 +15,7 @@ This project provisions a simple 3-tier architecture in Azure using Terraform. I
 ### 1. Clone the repo
 ```bash
 git clone https://github.com/atulkamble/Azure-Terraform-Project
-.git
-cd azure-terraform-3tier
+cd Azure-Terraform-Project
 ```
 
 Here’s a **complete Azure Terraform project** with **code and documentation**, ideal for deploying a basic 3-tier architecture (web, app, and database) using **Azure Virtual Network**, **Virtual Machines**, and **Network Security Groups**. This project can serve as a solid starting point for real-world scenarios.
