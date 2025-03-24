@@ -3,6 +3,12 @@
 Ref: (Azure CLI) https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt
 Ref: (Terraform) https://developer.hashicorp.com/terraform/install?product_intent=terraform#linux
 
+Instructions:
+
+1. RG named my-resource-group not existed in acccount 
+2. Copy and Paste your subscription-id in main.tf 
+3. Confirm Website URL http://public-ip
+
 1. Launch and connect azure VM 
 ```
 cd Downloads 
