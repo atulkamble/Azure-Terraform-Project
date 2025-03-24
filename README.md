@@ -244,8 +244,8 @@ This project provisions a simple 3-tier architecture in Azure using Terraform. I
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/your-repo/azure-terraform-3tier.git
-cd azure-terraform-3tier
+git clone https://github.com/atulkamble/Azure-Terraform-Project
+cd Azure-Terraform-Project
 ```
 
 ### 2. Login to Azure
@@ -258,8 +258,9 @@ az login
 terraform init
 ```
 
-### 4. Apply the configuration
+### 4. Plan & Apply the configuration
 ```bash
+terraform plan
 terraform apply
 ```
 
